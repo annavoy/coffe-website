@@ -34,7 +34,7 @@ body {
   min-height: 100vh;
   background: url("../images/body-bg.jpg") center / cover repeat;
   padding-top: 0;
-  font-family: var(--font-main);
+  font-family: var(--font-title);
   color: var(--color-text);
   min-width: 320px;
 }
@@ -137,36 +137,7 @@ button {
 
 /* HEADER */
 
-.header {
-  padding-top: 16px;
-}
 
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.logo {
-  font-family: var(--font-logo);
-  font-size: 34px;
-  font-style: italic;
-  font-weight: 400;
-  color: #fff;
-  line-height: 1;
-}
-
-.header__nav-list {
-  display: none;
-}
-
-.header_buttons {
-  display: none;
-  align-items: center;
-  gap: 16px;
-  flex-shrink: 0;
-}
 /* =========================
    HEADER
 ========================= */
@@ -417,6 +388,37 @@ button {
     flex-shrink: 0;
   }
 }
+/* .header {
+  padding-top: 16px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo {
+  font-family: var(--font-logo);
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+}
+
+.header__nav-list {
+  display: none;
+}
+
+.header_buttons {
+  display: none;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
 
 
 .nav-list {
@@ -459,7 +461,7 @@ button {
 .quality_btn:hover,
 .subscribe-btn:hover {
   transform: translateY(-1px);
-}
+} */
 
 /* HERO */
 
