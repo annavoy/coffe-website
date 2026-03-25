@@ -10,7 +10,6 @@
   --radius-pill: 24px;
 }
 
-
 h1,
 h2,
 h3,
@@ -28,7 +27,6 @@ body {
   min-height: 100vh;
   background: url("../images/body-bg.jpg") center / cover repeat;
   padding-top: 50px;
-  
 }
 
 h2,
@@ -65,8 +63,6 @@ button {
 }
 /* HEADER */
 .background {
-
-
   background:
     linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
     url("../images/hero-bg.jpg") center/cover no-repeat;
@@ -131,7 +127,9 @@ button {
   background-color: transparent;
   color: white;
   font-size: 16px;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 .sign-up {
@@ -140,9 +138,10 @@ button {
   padding: 12px 23px;
   border-radius: 24px;
   font-size: 16px;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
-
 
 /* .sign-up:hover {
   background-color:  rgb(231, 172, 24);
@@ -159,12 +158,10 @@ button {
   font-size: 16px;
 } */
 
-
 /* HERO */
 .hero {
   padding-top: 100px;
   color: white;
-
 }
 .hero_subtitle {
   font-family: "Lato", sans-serif;
@@ -178,9 +175,6 @@ button {
   color: #fff;
   line-height: 1;
   margin-bottom: 50px;
-
-
-
 }
 
 .hero-text {
@@ -200,7 +194,7 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 35px;
-  
+
   font-size: 16px;
   font-weight: 700;
   color: var(--color-dark);
@@ -250,7 +244,6 @@ button {
   font-weight: 700;
   margin-bottom: 40px;
   font-weight: 700;
-
 }
 
 .about-text p {
@@ -325,12 +318,10 @@ button {
   padding-bottom: 24px;
 }
 
-
 .products_text {
   font-weight: 400;
   font-size: 16px;
   color: #1e1e1e;
-
 }
 
 .products_number {
@@ -396,7 +387,6 @@ button {
   font-size: 22px;
   font-weight: 400;
   color: #707070;
-
 }
 
 .quality_description {
@@ -484,7 +474,6 @@ button {
   font-weight: 700;
   text-align: center;
   margin-bottom: 30px;
-
 }
 
 .feadback p {
@@ -494,7 +483,6 @@ button {
   color: #707070;
   margin-bottom: 60px;
   text-align: center;
-
 }
 
 .feedback-content {
@@ -505,7 +493,6 @@ button {
   margin: 0 auto;
   padding: 100px 80px;
   box-sizing: border-box;
-
 }
 
 .feedback-name {
@@ -530,7 +517,6 @@ button {
   height: 112px;
   display: block;
   margin: 0 auto;
-
 }
 
 .feadback_decor_right {
@@ -552,8 +538,7 @@ button {
 
 /* SUBSCRIBE */
 .subscribe {
-  background:
-    url("../images/subscribe_bg.png") center/cover no-repeat;
+  background: url("../images/subscribe_bg.png") center/cover no-repeat;
   padding-top: 80px;
   padding-bottom: 100px;
 }
@@ -596,7 +581,6 @@ button {
   color: rgba(0, 0, 0, 0.34);
 }
 
-
 .subscribe-btn {
   font-family: "Playfair Display", serif;
   padding: 0 40px;
@@ -621,7 +605,6 @@ button {
     url("../images/footer-bg.jpg") center/cover no-repeat;
   padding-top: 150px;
   padding-bottom: 100px;
-
 }
 
 .footer_container {
@@ -670,7 +653,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .social_media a:hover {
@@ -710,5 +695,4 @@ button {
 
 .footer_block4 {
   width: 300px;
-
 }
