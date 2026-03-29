@@ -899,13 +899,14 @@ transform: translateY(-10px);
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
   transition: transform var(--transition), background-color var(--transition);
 }
 
 .social_media a:hover {
   transform: translateY(-1px);
   background-color: var(--color-accent);
-  border-radius: 50%;
+
 }
 
 .social_media img {
