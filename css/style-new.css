@@ -187,10 +187,12 @@ button {
   gap: 40px;
 }
 
-.nav-list a {
+ .nav-list a {
+  position: relative;
   color: #fff;
   font-size: 16px;
   transition: color 0.3s ease;
+
 }
 .nav-list a::after {
   content: "";
@@ -198,7 +200,7 @@ button {
   left: 0;
   bottom: -3px;
   width: 0%;
-  height: 2px;
+  height: 1px;
   background: #c67c4e;
   transition: width 0.3s;
 }
@@ -540,6 +542,7 @@ button {
   border: 1px solid rgba(249, 192, 106, 0.42);
   padding-bottom: 24px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
 .products__item:hover{
@@ -554,7 +557,7 @@ transform: translateY(-10px);
   object-fit: cover;
   transition: transform 0.4s ease;
 }
-.products__img:hover {
+.products__item:hover .products__img {
   transform: scale(1.1);
 }
 .products h4 {
@@ -616,10 +619,12 @@ transform: translateY(-10px);
   align-items: center;
   padding: 32px 24px;
   margin-bottom: 0;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transform: scale(1);
 }
 .quality_item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+   transform: scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 .quality_icon {
   width: 72px;
@@ -898,8 +903,9 @@ transform: translateY(-10px);
 }
 
 .social_media a:hover {
-  transform: translateY(-3px);
-  color: #e0a94f;
+  transform: translateY(-1px);
+  background-color: var(--color-accent);
+  border-radius: 50%;
 }
 
 .social_media img {

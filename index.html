@@ -98,7 +98,7 @@
           </div>
         </header>
 
-        <section class="hero">
+        <section class="hero fade-in">
           <div class="container">
             <div class="hero-text">
               <p class="hero_subtitle">
@@ -116,7 +116,7 @@
         </section>
       </div>
 
-      <section class="about">
+      <section class="about fade-in">
         <img
           class="about__decor-left"
           src="./images/decor_left.png"
@@ -141,7 +141,7 @@
         </div>
       </section>
 
-      <section class="products">
+      <section class="products fade-in">
         <div class="container">
           <h2>Enjoy a new blend of coffee style</h2>
           <p class="products__subtitle">
@@ -201,7 +201,7 @@
         </div>
       </section>
 
-      <section class="quality">
+      <section class="quality fade-in">
         <img
           class="quality__decor quality__decor--right"
           src="./images/decor_right.png"
@@ -278,7 +278,7 @@
           </div>
         </div>
       </section>
-      <section class="feadback">
+      <section class="feadback fade-in">
         <img
           class="feadback_decor_right"
           src="./images/feadback_decor_right.png"
@@ -309,7 +309,7 @@
         />
       </section>
 
-      <section class="subscribe">
+      <section class="subscribe fade-in">
         <div class="container">
           <h2>Subscribe to get the Latest News</h2>
           <p>
@@ -327,7 +327,7 @@
         </div>
       </section>
 
-      <footer class="footer">
+      <footer class="footer fade-in">
         <div class="container footer_container">
           <div class="footer_block1">
             <a class="footer_logo" href="#">Bean Scene</a>
@@ -339,22 +339,22 @@
             </p>
             <ul class="social_media">
               <li>
-                <a href="#" aria-label="Facebook">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
                   <img src="./images/facebook.png" alt="Facebook" />
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="Twitter">
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
                   <img src="./images/twiter.png" alt="Twitter" />
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="Instagram">
+                <a href="https://instagram.com" target="_blank " aria-label="Instagram">
                   <img src="./images/instagram.png" alt="Instagram" />
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="LinkedIn">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
                   <img src="./images/youtube.png" alt="Youtube" />
                 </a>
               </li>
@@ -404,5 +404,23 @@
         </div>
       </footer>
     </main>
+    <script>
+  const fadeElements = document.querySelectorAll(".fade-in");
+
+  const showOnScroll = () => {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    fadeElements.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+
+      if (elementTop < triggerBottom) {
+        element.classList.add("show");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", showOnScroll);
+  window.addEventListener("load", showOnScroll);
+</script>
   </body>
 </html>
