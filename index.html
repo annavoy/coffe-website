@@ -4,19 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Landing Page</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Festive&family=Kaushan+Script&family=Lato:ital,wght@0,100;1,100&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Oooh+Baby&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Festive&family=Kaushan+Script&family=Lato:ital,wght@0,100;1,100&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Oooh+Baby&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
-    <link rel="stylesheet" href="./css/style-new.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+   
   </head>
 
   <body>
@@ -98,11 +93,11 @@
           </div>
         </header>
 
-        <section class="hero fade-in">
+        <section class="hero fade-in" id="home">
           <div class="container">
             <div class="hero-text">
               <p class="hero_subtitle">
-                We've had got your morning covered with
+                We've got your morning covered with
               </p>
               <h1>Coffee</h1>
               <p class="text">
@@ -116,7 +111,7 @@
         </section>
       </div>
 
-      <section class="about fade-in">
+      <section class="about fade-in" id="about">
         <img
           class="about__decor-left"
           src="./images/decor_left.png"
@@ -136,16 +131,16 @@
           </div>
 
           <div class="about__photo">
-            <img src="./images/about-foto.png" alt="cup of coffee" />
+            <img src="./images/about-foto.png" alt="cup of coffee" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>
 
-      <section class="products fade-in">
+      <section class="products fade-in" id="menu">
         <div class="container">
           <h2>Enjoy a new blend of coffee style</h2>
           <p class="products__subtitle">
-            Explore all flavours of coffee with us. There is always a new cup
+            Explore all flavors of coffee with us. There is always a new cup
             worth experiencing
           </p>
           <div class="products__block">
@@ -155,6 +150,7 @@
                   class="products__img"
                   src="./images/cappuccino.png"
                   alt="Cappuccino"
+                  loading="lazy"
                 />
                 <h4>Cappuccino</h4>
                 <p class="products_text">Coffee 50% | Milk 50%</p>
@@ -167,6 +163,7 @@
                   class="products__img"
                   src="./images/chai_late.png"
                   alt="Chai Latte"
+                  loading="lazy"
                 />
                 <h4>Chai Latte</h4>
                 <p class="products_text">Coffee 50% | Milk 50%</p>
@@ -179,6 +176,7 @@
                   class="products__img"
                   src="./images/machiato.png"
                   alt="Macchiato"
+                  loading="lazy"
                 />
                 <h4>Macchiato</h4>
                 <p class="products_text">Coffee 50% | Milk 50%</p>
@@ -189,9 +187,10 @@
                 <img
                   class="products__img"
                   src="./images/expresso.png"
-                  alt="Expresso"
+                  alt="Espresso"
+                  loading="lazy"
                 />
-                <h4>Expresso</h4>
+                <h4>Espresso</h4>
                 <p class="products_text">Coffee 50% | Milk 50%</p>
                 <p class="products_number">$8.50</p>
                 <button class="btn">Order Now</button>
@@ -201,11 +200,13 @@
         </div>
       </section>
 
-      <section class="quality fade-in">
+      <section class="quality fade-in" id="features">
         <img
           class="quality__decor quality__decor--right"
           src="./images/decor_right.png"
           alt="split coffee"
+          loading="lazy"
+          decoding="async"
         />
         <div class="container">
           <h2>Why are we different?</h2>
@@ -256,7 +257,7 @@
             </ul>
           </div>
           <p class="quality_description">
-            Great ideas start with great coffee. Lets help you achieve that
+            Great ideas start with great coffee. Let's help you achieve that
           </p>
           <h3 class="quality_title">Get started today</h3>
           <button class="btn quality_btn">Join Us</button>
@@ -268,25 +269,25 @@
           <div class="testimonial_content">
             <h2>Get a chance to have an Amazing morning</h2>
             <p>
-              We are giving you are one time opportunity to experience a better
+              We are giving you a one-time opportunity to experience a better
               life with coffee.
             </p>
             <button class="btn">Order Now</button>
           </div>
           <div class="testimonial_img">
-            <img src="/images/cup.png" alt="cup of coffee" />
+            <img src="./images/cup.png" alt="cup of coffee" loading="lazy" />
           </div>
         </div>
       </section>
-      <section class="feadback fade-in">
+      <section class="feedback fade-in" aria-label="Customer feedback">
         <img
-          class="feadback_decor_right"
+          class="feedback_decor_right"
           src="./images/feadback_decor_right.png"
           alt="split coffee"
         />
         <div class="container">
-          <h2>Our coffee perfection feedback</h2>
-          <p>Our customers has amazing things to say about us</p>
+          <h2>What our customers say</h2>
+          <p>Our customers have amazing things to say about us.</p>
           <div class="feedback-content">
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -299,11 +300,11 @@
             </p>
             <h3 class="feedback-name">Jonny Thomas</h3>
             <p class="feedback-position">Project Manager</p>
-            <img src="./images/feadback-foto.png" alt="Foto customer" />
+            <img src="./images/feadback-foto.png" alt="Customer photo" loading="lazy" decoding="async" />
           </div>
         </div>
         <img
-          class="feadback_decor_left"
+          class="feedback_decor_left"
           src="./images/feadback_decor_left.png"
           alt="split coffee"
         />
@@ -320,42 +321,66 @@
               class="subscribe-input"
               type="email"
               placeholder="Enter your mail"
+              aria-label="Email address"
               required
             />
-            <button class="subscribe-btn" type="submit">Suscribe</button>
+            <button class="subscribe-btn" type="submit">Subscribe</button>
           </form>
         </div>
       </section>
 
-      <footer class="footer fade-in">
+      <section class="portfolio-meta fade-in" id="case-study">
+        <div class="container">
+          <h2>Case Study Snapshot</h2>
+          <p class="portfolio-meta__intro">
+            This section highlights my role, implementation focus, and measurable outcomes for this landing page project.
+          </p>
+          <div class="portfolio-meta__grid">
+            <article class="portfolio-meta__card">
+              <h3>My Role</h3>
+              <p>Designed and built a fully responsive, single-page marketing landing using semantic HTML, adaptive CSS, and lightweight JavaScript interactions.</p>
+            </article>
+            <article class="portfolio-meta__card">
+              <h3>Stack</h3>
+              <p>HTML5, CSS3, responsive media queries, accessibility-focused markup, and vanilla JavaScript for mobile navigation and scroll-based effects.</p>
+            </article>
+            <article class="portfolio-meta__card">
+              <h3>Results</h3>
+              <p>Improved mobile usability, better keyboard accessibility, cleaner information architecture, and stronger portfolio-ready presentation quality.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer fade-in" id="contact">
         <div class="container footer_container">
           <div class="footer_block1">
             <a class="footer_logo" href="#">Bean Scene</a>
             <p class="footer_text">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s. when an unknown printer took a galley of
+              ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
             <ul class="social_media">
               <li>
-                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                   <img src="./images/facebook.png" alt="Facebook" />
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                   <img src="./images/twiter.png" alt="Twitter" />
                 </a>
               </li>
               <li>
-                <a href="https://instagram.com" target="_blank " aria-label="Instagram">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                   <img src="./images/instagram.png" alt="Instagram" />
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-                  <img src="./images/youtube.png" alt="Youtube" />
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                  <img src="./images/youtube.png" alt="YouTube" />
                 </a>
               </li>
             </ul>
@@ -383,7 +408,7 @@
             <ul class="contact_list">
               <li>
                 <a href="#"
-                  >Akshya Nagar ist Block ist Cross, Rammurthy nagar,
+                  >Akshya Nagar, 1st Block, 1st Cross, Rammurthy Nagar,
                   Bangalore-560016</a
                 >
               </li>
@@ -397,7 +422,7 @@
               </li>
 
               <li>
-                <a href="#">www.beanscene.com</a>
+                <a href="https://www.beanscene.com">www.beanscene.com</a>
               </li>
             </ul>
           </div>
@@ -405,22 +430,115 @@
       </footer>
     </main>
     <script>
-  const fadeElements = document.querySelectorAll(".fade-in");
+      const fadeElements = document.querySelectorAll(".fade-in");
+      const sections = document.querySelectorAll("section[id], footer[id]");
+      const desktopNavLinks = document.querySelectorAll(".nav-list a");
+      const mobileNavLinks = document.querySelectorAll(".mobile-menu__link");
+      const burger = document.querySelector(".burger");
+      const mobileMenu = document.querySelector(".mobile-menu");
+      const mobileCloseBtn = document.querySelector(".mobile-menu__close");
+      const mobileOverlay = document.querySelector(".mobile-menu__overlay");
+      const interactiveCards = document.querySelectorAll(".products__item, .quality_item");
 
-  const showOnScroll = () => {
-    const triggerBottom = window.innerHeight * 0.85;
+      const showOnScroll = () => {
+        const triggerBottom = window.innerHeight * 0.85;
 
-    fadeElements.forEach((element) => {
-      const elementTop = element.getBoundingClientRect().top;
+        fadeElements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
 
-      if (elementTop < triggerBottom) {
-        element.classList.add("show");
+          if (elementTop < triggerBottom) {
+            element.classList.add("show");
+          }
+        });
+      };
+
+      const updateActiveNavLink = () => {
+        let currentSectionId = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 120;
+          if (window.scrollY >= sectionTop) {
+            currentSectionId = section.getAttribute("id");
+          }
+        });
+
+        desktopNavLinks.forEach((link) => {
+          const isActive = link.getAttribute("href") === `#${currentSectionId}`;
+          link.classList.toggle("active", isActive);
+          if (isActive) {
+            link.setAttribute("aria-current", "page");
+          } else {
+            link.removeAttribute("aria-current");
+          }
+        });
+
+        mobileNavLinks.forEach((link) => {
+          const isActive = link.getAttribute("href") === `#${currentSectionId}`;
+          link.classList.toggle("active", isActive);
+          if (isActive) {
+            link.setAttribute("aria-current", "page");
+          } else {
+            link.removeAttribute("aria-current");
+          }
+        });
+      };
+
+      const openMobileMenu = () => {
+        mobileMenu.classList.add("is-open");
+        burger.setAttribute("aria-expanded", "true");
+        document.body.classList.add("body-lock");
+      };
+
+      const closeMobileMenu = () => {
+        mobileMenu.classList.remove("is-open");
+        burger.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("body-lock");
+      };
+
+      const initInteractiveCards = () => {
+        if (window.matchMedia("(hover: none)").matches) return;
+
+        interactiveCards.forEach((card) => {
+          card.addEventListener("mousemove", (event) => {
+            const rect = card.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+            const rotateY = ((x / rect.width) - 0.5) * 8;
+            const rotateX = ((y / rect.height) - 0.5) * -8;
+
+            card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+            card.style.setProperty("--mx", `${(x / rect.width) * 100}%`);
+            card.style.setProperty("--my", `${(y / rect.height) * 100}%`);
+          });
+
+          card.addEventListener("mouseleave", () => {
+            card.style.transform = "";
+            card.style.removeProperty("--mx");
+            card.style.removeProperty("--my");
+          });
+        });
+      };
+
+      if (burger && mobileMenu) {
+        burger.addEventListener("click", openMobileMenu);
+        mobileCloseBtn?.addEventListener("click", closeMobileMenu);
+        mobileOverlay?.addEventListener("click", closeMobileMenu);
+        mobileNavLinks.forEach((link) =>
+          link.addEventListener("click", closeMobileMenu)
+        );
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape" && mobileMenu.classList.contains("is-open")) {
+            closeMobileMenu();
+          }
+        });
       }
-    });
-  };
 
-  window.addEventListener("scroll", showOnScroll);
-  window.addEventListener("load", showOnScroll);
-</script>
+      window.addEventListener("scroll", showOnScroll);
+      window.addEventListener("scroll", updateActiveNavLink);
+      window.addEventListener("load", showOnScroll);
+      window.addEventListener("load", updateActiveNavLink);
+      window.addEventListener("load", initInteractiveCards);
+    </script>
   </body>
 </html>
