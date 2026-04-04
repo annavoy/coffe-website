@@ -2,7 +2,7 @@
 
 A responsive, single-page marketing site for a fictional coffee brand (**Bean Scene**). Built as a portfolio piece to demonstrate semantic HTML, mobile-first layout, and accessible front-end patterns without a framework.
 
-**[Live demo](https://annavoy.github.io/coffe-website/)** · **[Repository](https://github.com/annavoy/coffe-website)**
+**[Live demo](https://annavoy.github.io/coffe-landing-page/)** · **[Repository](https://github.com/annavoy/coffe-landing-page)**
 
 > **First-time setup:** On GitHub, open **Settings → Pages → Build and deployment**, set **Source** to **GitHub Actions**, then push to `main` or run the **Deploy GitHub Pages** workflow manually. See [`.github/workflows/deploy-github-pages.yml`](.github/workflows/deploy-github-pages.yml).
 
