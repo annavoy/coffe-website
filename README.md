@@ -1,71 +1,98 @@
-# Bean Scene Landing Page
+# Bean Scene — Coffee Landing Page
 
-Portfolio landing page project for a coffee brand concept.
+A responsive, single-page marketing site for a fictional coffee brand (**Bean Scene**). Built as a portfolio piece to demonstrate semantic HTML, mobile-first layout, and accessible front-end patterns without a framework.
 
-## About
+**[Live demo](https://annavoy.github.io/coffe-website/)** · **[Repository](https://github.com/annavoy/coffe-website)**
 
-This is a responsive one-page landing built with:
+> **First-time setup:** On GitHub, open **Settings → Pages → Build and deployment**, set **Source** to **GitHub Actions**, then push to `main` or run the **Deploy GitHub Pages** workflow manually. See [`.github/workflows/deploy-github-pages.yml`](.github/workflows/deploy-github-pages.yml).
 
-- HTML5
-- CSS3 (custom responsive styles)
-- Vanilla JavaScript (scroll reveal + mobile menu)
+## Overview
+
+The page presents a full landing experience: hero, menu highlights, about, features, testimonials, feedback, newsletter signup, and footer. Navigation uses in-page anchors with smooth scrolling; the layout adapts from phones to large desktops.
+
+## Tech stack
+
+| Layer        | Details                                              |
+| ------------ | ---------------------------------------------------- |
+| Markup       | HTML5                                                |
+| Styling      | CSS3, custom media queries, no preprocessor        |
+| Behavior     | Vanilla JavaScript (mobile menu, scroll reveal)    |
+| Typography   | Google Fonts (linked in `index.html`)              |
 
 ## Features
 
-- Hero section with CTA
-- About, products, features, testimonial, feedback, subscribe, and footer sections
-- Responsive navigation with burger/mobile menu
-- Smooth scrolling anchor navigation
-- Scroll-reveal section animation
-- Keyboard-friendly interactions (focus states, `Esc` to close menu)
+- **Responsive header** — Desktop nav plus burger menu with overlay, focus management, and **Esc** to close  
+- **Section flow** — Hero with CTA, menu, about, features, testimonial, feedback, subscribe, footer  
+- **Smooth anchor navigation** — Hash links scroll to section targets  
+- **Motion** — Scroll-reveal style treatment for section entrance  
+- **Accessibility-minded details** — Focus-visible styles, `aria-*` on the mobile menu, `rel="noopener noreferrer"` on external links  
+- **Performance touches** — Lazy-loading on non-critical images  
 
-## Project Structure
+## Repository structure
 
 ```text
-website-coffee/
-  index.html
-  css/
-    style.css
-  images/
-    ...
+coffee-landing-page/
+├── index.html
+├── css/
+│   └── style.css
+├── images/
+│   └── …
+└── README.md
 ```
 
-`index.html` uses `css/style.css`.
+The stylesheet is loaded from `./css/style.css` in `index.html`.
 
-## Run Locally
+## Getting started
 
-1. Open the project folder.
-2. Open `index.html` in a browser.
-3. For best development workflow, use a local server (for example, VS Code Live Server).
+### Option A — Open the file
 
-## Responsive Breakpoints
+Open `index.html` directly in your browser. This is enough to review layout and static behavior.
 
-- Mobile: default styles (`< 768px`)
-- Tablet: `@media (min-width: 768px)`
-- Desktop: `@media (min-width: 1024px)`
-- Large desktop: `@media (min-width: 1200px)`
+### Option B — Local server (recommended)
 
-## Improvements Already Applied
+A simple HTTP server avoids subtle issues with some APIs and paths during development.
 
-- Fixed in-page section anchors for navigation links.
-- Added mobile menu behavior (open/close/overlay/Escape/link click).
-- Corrected copy and typo issues in multiple sections.
-- Added safer external links (`rel="noopener noreferrer"`).
-- Added lazy-loading to non-critical images.
-- Added basic reveal animation styles for `.fade-in`.
-- Improved focus-visible states for better keyboard accessibility.
-- Improved small-screen typography and decorative image behavior.
+**Python 3** (from the project root):
 
-## Suggested Next Improvements
+```bash
+python3 -m http.server 8080
+```
 
-- Replace placeholder `Lorem Ipsum` copy with real portfolio/brand messaging.
-- Add real links/actions for `Sign In`, `Sign Up`, and CTA buttons.
-- Add `aria-current="page"` logic for active nav state.
-- Compress images and provide WebP/AVIF alternatives.
-- Split CSS into sections or components for easier maintenance.
-- Add favicon and Open Graph meta tags for sharing.
+Then visit `http://localhost:8080`.
+
+**Node.js** (if you use `npx`):
+
+```bash
+npx --yes serve .
+```
+
+## Responsive breakpoints
+
+Styles are organized around these widths:
+
+| Breakpoint     | Target              |
+| -------------- | ------------------- |
+| Base           | Mobile-first (`< 768px`) |
+| `768px`        | Tablet              |
+| `1024px`       | Desktop             |
+| `1200px`       | Large desktop       |
+
+## Project highlights
+
+Recent polish includes corrected in-page anchor targets, consistent mobile menu behavior (open, close, overlay, link navigation, Escape), copy and typo fixes, basic `.fade-in` reveal styling, improved small-screen typography, and safer handling of decorative images on narrow viewports.
+
+## Possible next steps
+
+- Replace placeholder copy with final brand or portfolio messaging  
+- Wire **Sign In**, **Sign Up**, and primary CTAs to real URLs or forms  
+- Add `aria-current="page"` (or similar) for active navigation state  
+- Optimize images (compression, WebP/AVIF) and add favicon + Open Graph meta tags  
+- Split `style.css` into logical partials or layers if the stylesheet grows  
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ## Author
 
-Anna Marenko
-
+Anna Rymarenko
