@@ -4,7 +4,7 @@ A responsive, single-page marketing site for a fictional coffee brand (**Bean Sc
 
 **[Live demo](https://annavoy.github.io/coffe-landing-page/)** · **[Repository](https://github.com/annavoy/coffe-landing-page)**
 
-> **First-time setup:** On GitHub, open **Settings → Pages → Build and deployment**, set **Source** to **GitHub Actions**, then push to `main` or run the **Deploy GitHub Pages** workflow manually. See [`.github/workflows/deploy-github-pages.yml`](.github/workflows/deploy-github-pages.yml).
+> **Publish the site (first time):** On GitHub, open **Settings → Pages → Build and deployment**. Under **Source**, choose **Deploy from a branch**, then select branch **`main`** and folder **`/ (root)`**, and save. After a short build, the live demo link above should load. This repo is plain static HTML at the root, so no build step or GitHub Actions workflow is required.
 
 ## Overview
 
